@@ -1,2 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000;
+}
 
-/* Your CSS Code here. */
+.player {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.player__video {
+    width: 100%;
+    height: auto;
+}
+
+.player__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.player__button {
+    background: none;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.player__slider {
+    width: 10%;
+}
+
+.progress {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 5px;
+    background: grey;
+    cursor: pointer;
+}
+
+.progress__filled {
+    width: 0;
+    background: red;
+    flex: 0;
+    height: 100%;
+}
